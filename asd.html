@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a Cena de Aniversario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://media.admagazine.com/photos/618a5e38b67f79aa891ed699/master/w_1600%2Cc_limit/92913.jpg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: pink;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 40px;
+            width: 60%;
+            margin: auto;
+            text-align: left;
+        }
+
+        .form-label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        select, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: pink;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff66b2;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>¡Victoria, estamos celebrando un aniversario muy especial!</h1>
+    <h2>Te invitamos a una cena íntima para conmemorar este momento único.</h2>
+    <div class="container">
+        <p>Nos encantaría contar con tu presencia en este evento que hemos preparado con mucho cariño.</p>
+        <p><strong>Fecha:</strong> Jueves 14 de noviembre</p>
+        <p><strong>Hora:</strong> 21:30 horas</p>
+        
+        <form action="https://formspree.io/f/xbljyzbl" method="POST">
+            <label class="form-label" for="comida">Preferencia de comida:</label>
+            <select name="comida" id="comida">
+                <option value="Fancy">Fancy</option>
+                <option value="Abundante">Abundante</option>
+            </select>
+            
+            <label class="form-label" for="dresscode">Dress Code:</label>
+            <select name="dresscode" id="dresscode">
+                <option value="Lo más linda posible">Lo más linda posible</option>
+            </select>
+
+            <input type="submit" value="Confirmar Asistencia">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Esperamos contar con tu presencia para hacer de esta celebración algo inolvidable.</p>
+    </div>
+
+</body>
+</html>
